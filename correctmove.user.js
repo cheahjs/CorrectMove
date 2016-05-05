@@ -1,11 +1,11 @@
 // ==UserScript==
 // @name         CorrectMove
 // @namespace    http://andrewshand.github.io/
-// @version      0.2
+// @version      0.2.1
 // @description  Make it easier to find a property on RightMove
 // @author       andrewshand94
 // @connect      *
-// @match        *://*.rightmove.co.uk/property-to-rent/*
+// @include      *://*.rightmove.co.uk/property-to-rent/*
 // @grant        GM_setValue
 // @grant        GM_getValue
 // @grant        GM_listValues
@@ -13,14 +13,14 @@
 // @require      http://code.jquery.com/jquery-latest.js
 // @require      https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js
 // @require      https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js
-// @include      *
-// @updateURL https://openuserjs.org/meta/andrewshand94/CorrectMove.meta.js
-// @downloadURL https://openuserjs.org/meta/andrewshand94/CorrectMove.user.js
+// @updateURL    https://openuserjs.org/meta/andrewshand94/CorrectMove.meta.js
+// @downloadURL  https://openuserjs.org/meta/andrewshand94/CorrectMove.user.js
+// @run-at       document-idle
 // ==/UserScript==
 
 /* jshint asi: true, esnext: true, -W097 */
 
-jQuery(document).ready(function($) {
+const once = _.once(function($) {
 
     const options = {
         clearCache: false,
@@ -111,3 +111,4 @@ jQuery(document).ready(function($) {
 
     doCards();
 });
+jQuery(document).ready(once);
