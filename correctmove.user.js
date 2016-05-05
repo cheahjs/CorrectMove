@@ -2,8 +2,8 @@
 // @name         CorrectMove
 // @namespace    http://andrewshand.github.io/
 // @version      0.2
-// @description  try to take over the world!
-// @author       You
+// @description  Make it easier to find a property on RightMove
+// @author       andrewshand94
 // @connect      *
 // @match        *://*.rightmove.co.uk/property-to-rent/*
 // @grant        GM_setValue
@@ -12,7 +12,6 @@
 // @grant        GM_deleteValue
 // @require      http://code.jquery.com/jquery-latest.js
 // @require      https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js
-// @require      https://cdn.rawgit.com/meetselva/attrchange/master/js/attrchange.js
 // @require      https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js
 // @include      *
 // @updateURL https://openuserjs.org/meta/andrewshand94/CorrectMove.meta.js
