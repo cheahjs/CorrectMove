@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         CorrectMove
 // @namespace    http://andrewshand.github.io/
-// @version      0.1
+// @version      0.2
 // @description  try to take over the world!
 // @author       You
 // @connect      *
@@ -15,6 +15,7 @@
 // @require      https://cdn.rawgit.com/meetselva/attrchange/master/js/attrchange.js
 // @require      https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js
 // @include      *
+// @updateURL https://openuserjs.org/meta/andrewshand94/CorrectMove.meta.js
 // @downloadURL https://openuserjs.org/meta/andrewshand94/correctmove.user.js
 // ==/UserScript==
 
