@@ -15,6 +15,7 @@
 // @require      https://cdn.rawgit.com/meetselva/attrchange/master/js/attrchange.js
 // @require      https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js
 // @include      *
+// @downloadURL https://openuserjs.org/meta/andrewshand94/correctmove.user.js
 // ==/UserScript==
 
 /* jshint asi: true, esnext: true, -W097 */
