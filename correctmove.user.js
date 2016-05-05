@@ -16,7 +16,7 @@
 // @require      https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js
 // @include      *
 // @updateURL https://openuserjs.org/meta/andrewshand94/CorrectMove.meta.js
-// @downloadURL https://openuserjs.org/meta/andrewshand94/correctmove.user.js
+// @downloadURL https://openuserjs.org/meta/andrewshand94/CorrectMove.user.js
 // ==/UserScript==
 
 /* jshint asi: true, esnext: true, -W097 */
