@@ -14,7 +14,7 @@
 // @require      https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js
 // @require      https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js
 // @updateURL    https://openuserjs.org/meta/andrewshand94/CorrectMove.meta.js
-// @downloadURL  https://openuserjs.org/meta/andrewshand94/CorrectMove.user.js
+// @downloadURL  https://openuserjs.org/install/andrewshand94/CorrectMove.user.js
 // @run-at       document-idle
 // ==/UserScript==
 
@@ -55,10 +55,12 @@ const once = _.once(function($) {
                 text = 'Available from ' + moment(date).format("Do MMM");
             }
 
-            card.find('.propertyCard-branchSummary-addedOrReduced').prepend(`${text}, `);
+            const element = `<span class="betterMove">${text}, </span>`;
+            card.find('.betterMove').remove();
+            card.find('.propertyCard-branchSummary-addedOrReduced').prepend(element);
             
             if (options.hideBeforeDate) {
-                card.parent().css('display', mo.isBefore("2016-06-25") ? 'none' : '');
+                card.parent().css('opacity', mo.isBefore("2016-06-25") ? '0.1' : '1');
             }
         };
 
