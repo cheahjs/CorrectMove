@@ -22,9 +22,15 @@
 
 const once = _.once(function($) {
 
+    function dateIn(amountAndUnit) {
+        const splitted = amountAndUnit.split(' ');
+        return moment().add(parseInt(splitted[0]), splitted[1]).toDate();
+    }
+
     const options = {
         clearCache: false,
-        hideBeforeDate: true
+        hideBeforeDate: "2016-06-25",
+        hideAfterDate: false
     };
 
     if (options.clearCache) {
@@ -62,9 +68,14 @@ const once = _.once(function($) {
             const element = `<span class="betterMove">${text}, </span>`;
             card.find('.propertyCard-branchSummary-addedOrReduced').prepend(element);
             
-            if (options.hideBeforeDate) {
-                card.parent().css('opacity', mo.isBefore("2016-06-25") ? '0.1' : '1');
+            let hide = false;
+            if (options.hideBeforeDate && mo.isBefore(options.hideBeforeDate)) {
+                hide = true;
             }
+            else if (options.hideAfterDate && mo.isAfter(options.hideAfterDate)) {
+                hide = true;
+            }
+            card.parent().css('opacity', hide  ? '0.1' : '1');
         };
 
         const existing = GM_getValue("homer-" + id);
