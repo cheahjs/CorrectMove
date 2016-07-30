@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         CorrectMove
 // @namespace    http://andrewshand.github.io/
-// @version      0.2.2
+// @version      0.2.3
 // @description  Make it easier to find a property on RightMove
 // @author       andrewshand94
 // @connect      *
